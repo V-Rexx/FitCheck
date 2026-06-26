@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import { FileText, Upload, Sparkles, Target, BarChart3, ListChecks } from "lucide-react";
 import Report from "./Report";
 
-const API = "http://localhost:8080";
+const API = import.meta.env.VITE_API_URL ||"http://localhost:8080";
 
 const FEATURES = [
   { label: "SKILL GAP MAP", Icon: Target, title: "Keyword Optimization",
